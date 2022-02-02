@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MapEditor</string>
     <string name="clickButton">Click ici</string>
+    <string name="edit_map">Edit map</string>
 </resources>
