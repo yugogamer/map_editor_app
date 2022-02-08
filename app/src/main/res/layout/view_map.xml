@@ -18,5 +18,15 @@
         android:layout_gravity="right"
         android:gravity="center_vertical"
         android:text="@string/edit_map"
+        android:layout_marginRight="3dp"
+        />
+
+    <Button
+        android:id="@+id/view_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center_vertical"
+        android:text="@string/view_map"
         />
 </LinearLayout>

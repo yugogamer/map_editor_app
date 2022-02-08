@@ -1,9 +1,11 @@
 package fr.edemart.mapeditor
 
 import android.content.Context
+import android.content.Intent
 import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import fr.edemart.mapeditor.service.ApiClient
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -20,7 +22,7 @@ class MapView(context: Context) : FrameLayout(context) {
                 if (map != null) {
                     val response = ApiClient.apiService.getMapById(map)
                     if (response.isSuccessful && response.body() != null){
-                        var map = response.body();
+
                     }
                 }
             }
