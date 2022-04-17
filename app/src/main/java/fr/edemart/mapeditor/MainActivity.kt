@@ -3,15 +3,14 @@ package fr.edemart.mapeditor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ListView
 import android.widget.Toast
+import fr.edemart.mapeditor.adapter.MapAdapter
 import fr.edemart.mapeditor.databinding.ActivityMainBinding
 import fr.edemart.mapeditor.service.ApiClient
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding

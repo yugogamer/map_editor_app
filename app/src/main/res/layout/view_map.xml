@@ -12,7 +12,7 @@
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/edit_butt"
+        android:id="@+id/edit_map_butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
@@ -22,11 +22,11 @@
         />
 
     <Button
-        android:id="@+id/view_map"
+        android:id="@+id/del_map_butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:gravity="center_vertical"
-        android:text="@string/view_map"
+        android:text="@string/del_map"
         />
 </LinearLayout>

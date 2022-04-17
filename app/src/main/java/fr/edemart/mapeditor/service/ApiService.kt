@@ -8,9 +8,9 @@ interface ApiService {
     @GET("iut/game-list")
     suspend fun getMapList(): Response<MutableList<String>>
     @GET("iut/game/{id}")
-    suspend fun getMapById(@Path("id") id : String): Response<List<Point>>
+    suspend fun getMapById(@Path("id") id : String): Response<List<Point>?>
     @POST("iut/game/{id}")
-    suspend fun createMap(@Path("id") id : String): Response<List<Point>>
+    suspend fun createMap(@Path("id") id : String, @Body points: List<Point>): Response<Void>
     @DELETE("iut/game/{id}")
     suspend fun deleteMap(@Path("id") id : String): Response<DELETE>
 }
