@@ -29,18 +29,6 @@ class MapView(context: Context) : FrameLayout(context) {
         context.startActivity(editMapIntent);
     }
 
-    fun deleteMapAction(name: String){
-        val title = resources.getString(R.string.dial_title_del_map)
-        val message = String.format(resources.getString(R.string.dial_title_del_map), name)
-
-        var alertDialog: AlertDialog.Builder = AlertDialog.Builder(context)
-        alertDialog.setTitle(title)
-        alertDialog.setMessage(message)
-        alertDialog.setPositiveButton(R.string.dial_pos_del_map) {_,_, -> deleteMapAction(name)}
-        alertDialog.setNegativeButton(R.string.dial_neg_del_map) {_,_, -> }
-        alertDialog.create().show()
-    }
-
     fun deleteMap(name: String){
         GlobalScope.launch {
             try {
