@@ -5,8 +5,15 @@
     <string name="del_map">Delete map</string>
     <string name="dial_title_del_map">Please confirm</string>
     <string name="dial_message_del_map">Are you sure you want to delete this map? \'%1$s\' will be lost forever! (A long time!)</string>
+    <string name="dial_message_del_point">Are you sure you want to delete this point ?</string>
     <string name="dial_pos_del_map">Confirm</string>
     <string name="dial_neg_del_map">Cancel</string>
     <string name="dial_pos_end_del_map">Map deleted</string>
     <string name="dial_neg_end_del_map">Can\'t delete map</string>
+    <string name="edit_point">Edit point</string>
+    <string name="del_point">Delete point</string>
+    <string name="add_point">add point</string>
+    <string name="save_point">save points</string>
+    <string name="name">name</string>
+    <string name="saved_succes">maps saved</string>
 </resources>

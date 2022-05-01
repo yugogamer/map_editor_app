@@ -1,5 +1,6 @@
 package fr.edemart.mapeditor
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        binding.addingMap.setOnClickListener {
+            val editMapIntent = Intent(this, EditMap::class.java)
+            editMapIntent.putExtra("name", "")
+            this.startActivity(editMapIntent);
+        }
         setContentView(binding.root)
         executeCall()
     }
@@ -46,5 +52,10 @@ class MainActivity : AppCompatActivity() {
                 ).show()
             }
         }
+    }
+
+    override fun onResume() {
+        executeCall()
+        super.onResume()
     }
 }

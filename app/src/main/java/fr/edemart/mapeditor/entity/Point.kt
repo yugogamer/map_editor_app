@@ -3,6 +3,6 @@ package fr.edemart.mapeditor.entity
 data class Point(
     var name : String = "",
     val type : Type = Type.NONE,
-    var latitude : Float,
-    var longitude : Float
+    var latitude : Float = 0.0f,
+    var longitude : Float = 0.0f
 )
