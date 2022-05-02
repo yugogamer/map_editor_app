@@ -16,4 +16,8 @@
     <string name="save_point">save points</string>
     <string name="name">name</string>
     <string name="saved_succes">maps saved</string>
+    <string name="lat">lat :</string>
+    <string name="long_text">long :</string>
+    <string name="type">type</string>
+    <string name="cancel">cancel</string>
 </resources>
